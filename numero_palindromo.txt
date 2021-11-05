@@ -1,11 +1,14 @@
-  #### Este programa (função) escrita na linguagem R verifica se um número é 
-  ### palindromo. Um número é palíndromo quando invertemos os seus algarismo 
-  ### o número não se altera. Por exemplo: 11, 434, 2772, assim por diante ...
+  #### Este programa (função chamada de numero_palindromo) escrita na linguagem R, verifica 
+  ###  se um número é palindromo tendo como parâmetros o número e a quantidade de
+  ###  algarismos que o número contém. Um número é palíndromo quando ao invertemos os seus   ###  algarismo o número não se altera.
+  ###  Por exemplo: 11, 434, 2772, assim por diante ...
 
   ### programa escrito em 05/11  ,  por Christiano Garcia.
 
 
-  num = as.character(num)
+   numero_palindromo = function(num, n_algarismo){
+
+            num = as.character(num)
             vetor_num = vector("character",n_algarismos)
             for(k in 1:nchar(num))vetor_num[k]=substr(num,k,k)
             inverso = vector("character",n_algarismos)
