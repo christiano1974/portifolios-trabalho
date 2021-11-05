@@ -1,0 +1,17 @@
+  num = as.character(num)
+            vetor_num = vector("character",n_algarismos)
+            for(k in 1:nchar(num))vetor_num[k]=substr(num,k,k)
+            inverso = vector("character",n_algarismos)
+            k = nchar(num)
+            while(k > 0){
+              inverso[k] = vetor_num[1 + nchar(num) - k]
+              k = k - 1}     
+            cont = 0
+            for(k in 1:nchar(num)){
+                if ( vetor_num[k] == inverso[k]) cont = cont + 1 }
+            if ( cont == n_algarismos){
+                print('Número digitado é palíndromo !!!')}
+            else{
+                print('Número digitado não é palíndromo !!!')}          
+            
+    }      
